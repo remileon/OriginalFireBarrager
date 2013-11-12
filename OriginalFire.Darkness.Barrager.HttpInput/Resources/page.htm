@@ -1,0 +1,16 @@
+﻿<html>
+<head>
+<script type="text/javascript">
+function submit()
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open('post', location.host, true);
+    xhr.send(document.getElementById('content').value);
+}
+</script>
+</head>
+<body>
+<input id="content" type="text" size=20>
+<input type="button" value="提交" onclick="submit()">
+</body>
+</html>
